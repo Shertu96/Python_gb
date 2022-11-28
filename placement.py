@@ -3,7 +3,9 @@
 x = int(input('Введите координту x: '))
 y = int(input('Введите координту y: '))
 
-if x > 0 and y > 0:
+if x == 0 or y == 0:
+    print("Координата не может быть равна 0")
+elif x > 0 and y > 0:
     print('1-я четверть')
 elif x < 0 and y > 0:
     print('2-я четверть')
