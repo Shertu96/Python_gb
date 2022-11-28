@@ -10,4 +10,7 @@ y1 = int(input('Введите координату y точки A: '))
 x2 = int(input('Введите координату x точки B: '))
 y2 = int(input('Введите координату y точки B: '))
 
-print(dist(x1,y1,x2,y2))
+if x1 != y1 and x2 != y2:
+    print(dist(x1,y1,x2,y2))
+else:
+    print("Длина = 0")
