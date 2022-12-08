@@ -42,14 +42,14 @@ def computer_play(sweets, max_sweet_per_turn):
           continue
         sweets -= wish_sweets
         turn = turn_map[turn]
-    print(f"{name_map[turn].capitalize()} проиграл!")
+    print(f"{name_map[(turn + 1) *2]} проиграл!")
 
 sweets = 2021
-max_sweet_per_turn = 500
+max_sweet_per_turn = 28
 first_player = 0
 second_player = 0
 turn_map = {0: 1, 1: 0}
-name_map = {0: "компьютером", 1: "человеком"}
+name_map = {0: "компьютером", 1: "человеком", 2: "Компьютер", 3: "Человек"}
 
 human_play(sweets, max_sweet_per_turn)
 computer_play(sweets, max_sweet_per_turn)
